@@ -15,7 +15,7 @@ svm_params = dict( kernel_type = cv2.SVM_LINEAR,
                     svm_type = cv2.SVM_C_SVC,
                     C=2.67, gamma=5.383 )
 
-winSize = (64,64)
+winSize = (64,128)
 blockSize = (16,16)
 blockStride = (8,8)
 cellSize = (8,8)
@@ -36,6 +36,9 @@ responses_test = []
 
 hog = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
                         histogramNormType,L2HysThreshold,gammaCorrection,nlevels)
+#
+# hog = cv2.HOGDescriptor()
+
 svm = cv2.SVM()
 
 train_pos = glob('train/pos/*')
@@ -43,7 +46,9 @@ train_neg = glob('train/neg/*')
 test_pos = glob('test/pos/*')
 test_neg = glob('test/neg/*')
 test_mit = glob('MIT/*')
-
+test_prova = glob('prova/aux/*')
+train_prova_pos = glob('prova/pos/*')
+train_prova_neg = glob('prova/neg/*')
 for fn in it.chain(train_pos):
     #print fn, ' - ',
     try:
@@ -55,6 +60,7 @@ for fn in it.chain(train_pos):
         print 'loading error'
         continue
     hist_train = hog.compute(img,winStride,padding,locations)
+    # hist_train = hog.compute(img)
     train_set.append(hist_train)
     responses_train.append([1.])
 
