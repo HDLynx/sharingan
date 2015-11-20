@@ -261,7 +261,7 @@ for fn in it.chain(test_pos):
         # height, width = img.shape
         # if width > height:
         #     img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
+        #img = cv2.resize(img, (64, 128))
         # height, width = img.shape
 
         if img is None:
