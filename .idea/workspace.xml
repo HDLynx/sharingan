@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5965fc78-a275-4d11-a0f5-63344141576e" name="Default" comment="Proves: codi Skimage;&#10;adaptat HOG propi per executar el Multiscale per pintar rectanbles... un fracàs màxim&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cython_hog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" afterPath="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_skimage_feature.py" afterPath="$PROJECT_DIR$/HOG_skimage_feature.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sharingan.iws" />
@@ -48,7 +45,7 @@
       <file leaf-file-name="HOG_skimage_feature.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48257372">
+            <state vertical-scroll-proportion="1.8096515">
               <caret line="144" column="84" selection-start-line="144" selection-start-column="84" selection-end-line="144" selection-end-column="84" />
               <folding />
             </state>
@@ -419,7 +416,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448022423709</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Proves: codi Skimage;&#10;adaptat HOG propi per executar el Multiscale per pintar rectanbles... un fracàs màxim&#10;">
+      <created>1448052244412</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1448052244412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -435,6 +438,7 @@
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.47457626" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.4842615" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939467" sideWeight="0.4814815" order="1" side_tool="false" content_ui="tabs" />
@@ -450,7 +454,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -983,7 +986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48257372">
+        <state vertical-scroll-proportion="1.8096515">
           <caret line="144" column="84" selection-start-line="144" selection-start-column="84" selection-end-line="144" selection-end-column="84" />
           <folding />
         </state>
