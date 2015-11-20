@@ -215,12 +215,14 @@ def inside(r, q):
     qx, qy, qw, qh = q
     return rx > qx and ry > qy and rx + rw < qx + qw and ry + rh < qy + qh
 
+
 def draw_detections(img, rects, thickness = 1):
     for x, y, w, h in rects:
         # the HOG detector returns slightly larger rectangles than the real objects.
         # so we slightly shrink the rectangles to get a nicer output.
         pad_w, pad_h = int(0.15*w), int(0.05*h)
         cv2.rectangle(img, (x+pad_w, y+pad_h), (x+w-pad_w, y+h-pad_h), (0, 255, 0), thickness)
+
 
 
 hog = cv2.HOGDescriptor()
@@ -239,18 +241,16 @@ iteracion = 0
 
 # svm.load('svm_INRIA_MIT.dat')
 
-tree = ET.parse('svm_Skimage.xml')
-root = tree.getroot()
-# now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
-SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
-rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
-svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
-svmvec.append(-rho)
-pickle.dump(svmvec, open("svm.pickle", 'w'))
-svm = pickle.load(open("svm.pickle"))
-hog.setSVMDetector( np.array(svm) )
-del svm
-for fn in it.chain(train_pos):
+# tree = ET.parse('svm_INRIA_MIT.xml')
+# root = tree.getroot()
+# # now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
+# SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
+# rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
+# svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
+# svmvec.append(-rho)
+# pickle.dump(svmvec, open("svm.pickle", 'w'))
+hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+for fn in it.chain(test_pos):
 
     # iteracion += 1
     # if iteracion == 10:
@@ -261,7 +261,7 @@ for fn in it.chain(train_pos):
         # height, width = img.shape
         # if width > height:
         #     img = cv2.transpose(img)
-        # img = cv2.resize(img, (64, 128))
+        img = cv2.resize(img, (64, 128))
         # height, width = img.shape
 
         if img is None:
@@ -269,7 +269,9 @@ for fn in it.chain(train_pos):
             continue
         else:
             # labels_test.append([1.])
-           
+            # svm = pickle.load(open("svm.pickle"))
+            # hog.setSVMDetector( np.array(svm) )
+            # del svm
             found, w = hog.detectMultiScale(img)
             found_filtered = []
             for ri, r in enumerate(found):

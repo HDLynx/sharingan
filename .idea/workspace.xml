@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5965fc78-a275-4d11-a0f5-63344141576e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_skimage_feature.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_skimage_feature_showGradients.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_amb_funcions_Opencv.py" afterPath="$PROJECT_DIR$/HOG_amb_funcions_Opencv.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prova.py" afterPath="$PROJECT_DIR$/prova.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_data.dat" afterPath="$PROJECT_DIR$/svm_data.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sharingan.iws" />
@@ -28,29 +33,28 @@
       <file leaf-file-name="prova.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prova.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7928118">
-              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.07832898">
+              <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
               <folding>
-                <element signature="e#536#751#0" expanded="false" />
-                <element signature="e#779#1085#0" expanded="false" />
-                <element signature="e#1111#1168#0" expanded="false" />
-                <element signature="e#1198#2278#0" expanded="false" />
-                <element signature="e#2304#2518#0" expanded="false" />
-                <element signature="e#2574#5771#0" expanded="false" />
-                <element signature="e#5836#7250#0" expanded="false" />
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#561#776#0" expanded="false" />
+                <element signature="e#804#1110#0" expanded="false" />
+                <element signature="e#1136#1193#0" expanded="false" />
+                <element signature="e#1223#2303#0" expanded="false" />
+                <element signature="e#2329#2543#0" expanded="false" />
+                <element signature="e#2599#5796#0" expanded="false" />
+                <element signature="e#5861#7275#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sharingan_MIT_INRIA.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA.py">
+      <file leaf-file-name="HOG_skimage_feature.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+              <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +89,11 @@
         <option value="$PROJECT_DIR$/HOG_SVN_Millorat.py" />
         <option value="$PROJECT_DIR$/Read_XML.py" />
         <option value="$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py" />
+        <option value="$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py" />
+        <option value="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
+        <option value="$PROJECT_DIR$/HOG_amb_funcions_Opencv.py" />
         <option value="$PROJECT_DIR$/prova.py" />
+        <option value="$PROJECT_DIR$/HOG_skimage_feature.py" />
       </list>
     </option>
   </component>
@@ -160,7 +168,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prova">
+  <component name="RunManager" selected="Python.HOG_skimage_feature">
     <configuration default="false" name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,7 +203,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="PeopleDetect2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="HOG_skimage_feature" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -207,12 +215,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PeopleDetect_BackgroundChanges.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_skimage_feature.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Read_XML" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="HOG_DetectMultiScale_HOG_Default" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -224,12 +232,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Read_XML.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="HOG_SVN_Millorat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="HOG_amb_funcions_Opencv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -241,7 +249,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_SVN_Millorat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_amb_funcions_Opencv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -371,17 +379,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.prova" />
       <item index="1" class="java.lang.String" itemvalue="Python.peopledetect" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PeopleDetect2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Read_XML" />
-      <item index="4" class="java.lang.String" itemvalue="Python.HOG_SVN_Millorat" />
+      <item index="2" class="java.lang.String" itemvalue="Python.HOG_skimage_feature" />
+      <item index="3" class="java.lang.String" itemvalue="Python.HOG_DetectMultiScale_HOG_Default" />
+      <item index="4" class="java.lang.String" itemvalue="Python.HOG_amb_funcions_Opencv" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.prova" />
-        <item index="1" class="java.lang.String" itemvalue="Python.peopledetect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.HOG_SVN_Millorat" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Read_XML" />
-        <item index="4" class="java.lang.String" itemvalue="Python.PeopleDetect2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.HOG_skimage_feature" />
+        <item index="1" class="java.lang.String" itemvalue="Python.prova" />
+        <item index="2" class="java.lang.String" itemvalue="Python.HOG_amb_funcions_Opencv" />
+        <item index="3" class="java.lang.String" itemvalue="Python.HOG_DetectMultiScale_HOG_Default" />
+        <item index="4" class="java.lang.String" itemvalue="Python.peopledetect" />
       </list>
     </recent_temporary>
   </component>
@@ -409,23 +417,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32659408" sideWeight="0.47457626" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32659408" sideWeight="0.4842615" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.47457626" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.4842615" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939467" sideWeight="0.4814815" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17791899" sideWeight="0.42857143" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3978159" sideWeight="0.46489105" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23510723" sideWeight="0.42857143" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39647576" sideWeight="0.46489105" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761312" sideWeight="0.45843422" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26647145" sideWeight="0.4213075" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2657856" sideWeight="0.41858616" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2542373" sideWeight="0.5714286" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="1.0" sideWeight="0.5786925" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2657856" sideWeight="0.5814138" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.49717513" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -470,6 +478,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -477,90 +492,23 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="69" />
+      <option name="time" value="72" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="centre" language="Python" />
+        <watch expression="centre[0]" language="Python" />
+        <watch expression="dx" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HOG_SVM_digits.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="20" selection-start-line="35" selection-start-column="4" selection-end-line="46" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_SVN_Millorat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="14" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#988#1257#0" expanded="false" />
-            <element signature="e#1288#1387#0" expanded="false" />
-            <element signature="e#1420#1774#0" expanded="false" />
-            <element signature="e#1455#1501#0" expanded="false" />
-            <element signature="e#1552#1624#0" expanded="false" />
-            <element signature="e#1666#1774#0" expanded="false" />
-            <element signature="e#1803#2289#0" expanded="false" />
-            <element signature="e#1851#2061#0" expanded="false" />
-            <element signature="e#2348#2836#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detect_face_eyes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HOG_SVN_Millorat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
             <element signature="e#988#1257#0" expanded="false" />
             <element signature="e#1288#1387#0" expanded="false" />
             <element signature="e#1420#1774#0" expanded="false" />
@@ -579,13 +527,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,13 +544,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,13 +568,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -634,13 +585,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -650,13 +602,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -680,13 +633,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,13 +650,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,13 +667,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -728,13 +684,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,13 +701,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,20 +895,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HOG_SVN_Millorat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
             <element signature="e#988#1257#0" expanded="false" />
             <element signature="e#1288#1387#0" expanded="false" />
             <element signature="e#1420#1774#0" expanded="false" />
@@ -964,36 +914,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv.py">
+    <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="50" />
+          <caret line="396" column="33" selection-start-line="392" selection-start-column="8" selection-end-line="396" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharinganMIT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.33121">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="18" selection-start-line="64" selection-start-column="10" selection-end-line="66" selection-end-column="18" />
+          <folding>
+            <element signature="e#23#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature_showGradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA.py">
+    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.4915254">
+          <caret line="242" column="21" selection-start-line="242" selection-start-column="21" selection-end-line="242" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7944915">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.048728812">
+          <caret line="263" column="8" selection-start-line="263" selection-start-column="8" selection-end-line="263" selection-end-column="8" />
+          <folding>
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
+            <element signature="e#7300#7416#0" expanded="false" />
+            <element signature="e#7471#7793#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prova.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7928118">
-          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.07832898">
+          <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
           <folding>
-            <element signature="e#536#751#0" expanded="false" />
-            <element signature="e#779#1085#0" expanded="false" />
-            <element signature="e#1111#1168#0" expanded="false" />
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#561#776#0" expanded="false" />
+            <element signature="e#804#1110#0" expanded="false" />
+            <element signature="e#1136#1193#0" expanded="false" />
+            <element signature="e#1223#2303#0" expanded="false" />
+            <element signature="e#2329#2543#0" expanded="false" />
+            <element signature="e#2599#5796#0" expanded="false" />
+            <element signature="e#5861#7275#0" expanded="false" />
           </folding>
         </state>
       </provider>

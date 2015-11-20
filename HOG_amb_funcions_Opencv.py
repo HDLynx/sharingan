@@ -76,16 +76,28 @@ for fn in it.chain(train_neg):
     hist_train = hog.compute(img,winStride,padding,locations)
     train_set.append(hist_train)
     responses_train.append([0.])
+for fn in it.chain(test_mit):
+    try:
+        img = cv2.imread(fn)
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+    except:
+        print 'loading error'
+        continue
+    hist_train = hog.compute(img,winStride,padding,locations)
+    train_set.append(hist_train)
+    responses_train.append([1.])
 
 train_set = np.float32(train_set)
 responses_train = np.float32(responses_train)
 
 svm.train(train_set,responses_train, params=svm_params)
 svm.save('svm_data.dat')
-
+svm.save('svm_data2.xml')
 
 for fn in it.chain(test_pos):
-    #print fn, ' - ',
+    print fn, ' - ',
     try:
         img = cv2.imread(fn)
         if img is None:

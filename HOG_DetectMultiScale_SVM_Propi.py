@@ -239,7 +239,7 @@ iteracion = 0
 
 # svm.load('svm_INRIA_MIT.dat')
 
-tree = ET.parse('svm_Skimage.xml')
+tree = ET.parse('svm_INRIA_MIT.xml')
 root = tree.getroot()
 # now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
 SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
@@ -261,7 +261,7 @@ for fn in it.chain(train_pos):
         # height, width = img.shape
         # if width > height:
         #     img = cv2.transpose(img)
-        # img = cv2.resize(img, (64, 128))
+        img = cv2.resize(img, (64, 128))
         # height, width = img.shape
 
         if img is None:
@@ -269,7 +269,7 @@ for fn in it.chain(train_pos):
             continue
         else:
             # labels_test.append([1.])
-           
+
             found, w = hog.detectMultiScale(img)
             found_filtered = []
             for ri, r in enumerate(found):
