@@ -10,6 +10,7 @@ import pickle
 import re
 
 
+
 dimCell = 8 # size of cell
 dimBlock = 2 # size of block (2x2)Cells
 nbins = 9
