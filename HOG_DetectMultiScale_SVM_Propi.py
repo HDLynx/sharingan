@@ -237,17 +237,17 @@ set_mit = glob('MIT/*')
 # train_prova_neg = glob('prova/neg/*')
 iteracion = 0
 
-# svm.load('svm_INRIA_MIT.dat')
+svm.load('svmlight.xml')
 
-tree = ET.parse('svm_INRIA_MIT.xml')
-root = tree.getroot()
-# now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
-SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
-rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
-svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
-svmvec.append(-rho)
-pickle.dump(svmvec, open("svm.pickle", 'w'))
-svm = pickle.load(open("svm.pickle"))
+# tree = ET.parse('svmlight.xml')
+# root = tree.getroot()
+# # now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
+# SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
+# rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
+# svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
+# svmvec.append(-rho)
+# pickle.dump(svmvec, open("svm.pickle", 'w'))
+# svm = pickle.load(open("svm.pickle"))
 hog.setSVMDetector( np.array(svm) )
 del svm
 for fn in it.chain(train_pos):

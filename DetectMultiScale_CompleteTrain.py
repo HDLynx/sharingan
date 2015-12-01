@@ -24,6 +24,21 @@ labels_test = []
 svm_params = dict( kernel_type = cv2.SVM_LINEAR,
                     svm_type = cv2.SVM_C_SVC,
                     C=2.67, gamma=5.383 )
+winSize = (64,128)
+blockSize = (16,16)
+blockStride = (8,8)
+cellSize = (8,8)
+nbins = 9
+derivAperture = 0
+winSigma = -1
+histogramNormType = 0
+# L2HysThreshold = 2.0000000000000001e-01
+L2HysThreshold = 0.2
+gammaCorrection = 0
+nlevels = 64
+winStride = (8,8)
+padding = (8,8)
+locations = ((0,0),)
 
 def split2d(img, cell_size, flatten=True):
     h, w = img.shape[:2]
@@ -224,46 +239,67 @@ def draw_detections(img, rects, thickness = 1):
         cv2.rectangle(img, (x+pad_w, y+pad_h), (x+w-pad_w, y+h-pad_h), (0, 255, 0), thickness)
 
 
+# hog = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
+#                         histogramNormType,L2HysThreshold,gammaCorrection,nlevels)
 
-hog = cv2.HOGDescriptor()
+hog = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
+                        histogramNormType,L2HysThreshold,gammaCorrection,nlevels)
 svm = cv2.SVM()
 counter = 0
-train_pos = glob('train/pos/*')
-train_neg = glob('train/neg/*')
-test_pos = glob('test/pos/*')
-test_neg = glob('test/neg/*')
-train_mit = glob('MIT/Train/*')
-test_mit = glob('MIT/Test/*')
-set_mit = glob('MIT/*')
-# train_prova_pos = glob('prova/pos/*')
+test_neg = glob('train64_128/neg/*')
+
+train_prova_pos = glob('test/pos/*')
+# test_mit = glob('MIT/*')
 # train_prova_neg = glob('prova/neg/*')
+test_pos = glob('')
 iteracion = 0
 
-hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-for fn in it.chain(test_pos):
+# svm.load('svmlight.dat')
+# svm.save('svmlight2.xml')
+svmvec = []
+tree = ET.parse('svm_INRIA_MIT.xml')
+root = tree.getroot()
+# now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
+SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
+rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
+svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
+# svmvec.append([[float(x)] for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')])
+svmvec.append(-rho)
+pickle.dump(svmvec, open("svm.pickle", 'w'))
+svm = pickle.load(open("svm.pickle"))
+# tamany = hog.getDescriptorSize()
+# hog.setSize(34021)
+svm_l = cv2.HOGDescriptor_getDefaultPeopleDetector()
+svm_ll = np.float32(svm)
+hog.setSVMDetector( svm_ll )
+# hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+del svm
+fails = []
+for fn in it.chain(train_prova_pos):
 
     try:
         # Retornem imatge en escala de grisos normalitzada
-        img = load_image(fn)
-
+        # img = load_image(fn)
+        img = cv2.imread(fn)
+        # img = cv2.resize(img, (64, 128))
         if img is None:
             print 'Failed to load image file:', fn
             continue
         else:
-            # labels_test.append([1.])
-            # svm = pickle.load(open("svm.pickle"))
-            # hog.setSVMDetector( np.array(svm) )
-            # del svm
             found, w = hog.detectMultiScale(img)
             found_filtered = []
             for ri, r in enumerate(found):
                 for qi, q in enumerate(found):
                     if ri != qi and inside(r, q):
                         break
-                else:
-                    found_filtered.append(r)
+                    else:
+                        found_filtered.append(r)
             draw_detections(img, found)
-            draw_detections(img, found_filtered, 3)
+            draw_detections(img, found_filtered, 2)
+            if len(found) > 0:
+                print iteracion, '-', fn, '||'
+                fails.append(fn)
+            iteracion += 1
             cv2.imshow('img', img)
             ch = 0xFF & cv2.waitKey()
             if ch == 27:
@@ -271,3 +307,5 @@ for fn in it.chain(test_pos):
     except:
         print 'loading error'
         continue
+    print counter, '----'
+print len(fails), fails

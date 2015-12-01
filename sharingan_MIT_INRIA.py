@@ -319,7 +319,7 @@ samples = np.float32(samples)
 labels = np.float32(labels)
 svm.train(samples, labels, params=svm_params)
 svm.save('svm_INRIA_MIT.dat')
-
+svm.save('svm_INRIA_MIT.xml')
 # iteracion = 0
 for fn in it.chain(test_pos):
     # iteracion += 1
