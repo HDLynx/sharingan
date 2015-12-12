@@ -1,5 +1,5 @@
 import sys
-from cv2.cv import *
+import cv
  
 def inside(r, q):
     (rx, ry), (rw, rh) = r

@@ -122,7 +122,7 @@ mask = resp == responses_test
 correct = np.count_nonzero(mask)
 for i in range(len(resp)):
     if resp[i] != -1.:
-        print test_neg[i]
+        print test_neg[i], resp[i], len(resp)
 
 print correct*100.0/resp.size,'%'
 # hog.save('prova.dat','vector_descriptors')

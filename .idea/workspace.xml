@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5965fc78-a275-4d11-a0f5-63344141576e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SVMLight_Test1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SVMLight_Test2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SVMLight_Train1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SVMLight_Train2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/checkFileFormat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getSamplesImages.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/svmlight_default.dat" />
+    <list default="true" id="5965fc78-a275-4d11-a0f5-63344141576e" name="Default" comment="proves de resultats&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_Kalman.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_Kalman2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_skimage_feature_TEST.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HOG_skimage_feature_TEST2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KalmanExample.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imageCrop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servo_gir.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharingan_MIT_INRIA_TEST.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharingan_MIT_INRIA_TEST2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/videoReading.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/%FF.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/getSamplesImages.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" afterPath="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG1.py" afterPath="$PROJECT_DIR$/HOG1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG2.py" afterPath="$PROJECT_DIR$/HOG2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG3.py" afterPath="$PROJECT_DIR$/HOG3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" afterPath="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py" afterPath="$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_skimage_feature.py" afterPath="$PROJECT_DIR$/HOG_skimage_feature.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kalman_mouse.py" afterPath="$PROJECT_DIR$/Kalman_mouse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVMLight_Test1.py" afterPath="$PROJECT_DIR$/SVMLight_Test1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVMLight_Test2.py" afterPath="$PROJECT_DIR$/SVMLight_Test2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVMLight_Train1.py" afterPath="$PROJECT_DIR$/SVMLight_Train1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Sharingan.iml" afterPath="$PROJECT_DIR$/.idea/Sharingan.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prova.py" afterPath="$PROJECT_DIR$/prova.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sharingan_MIT_INRIA.py" afterPath="$PROJECT_DIR$/sharingan_MIT_INRIA.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm.pickle" afterPath="$PROJECT_DIR$/svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_INRIA_MIT.dat" afterPath="$PROJECT_DIR$/svm_INRIA_MIT.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_INRIA_MIT.xml" afterPath="$PROJECT_DIR$/svm_INRIA_MIT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_Skimage.dat" afterPath="$PROJECT_DIR$/svm_Skimage.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_Skimage.xml" afterPath="$PROJECT_DIR$/svm_Skimage.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -38,42 +55,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HOG_skimage_feature.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
+      <file leaf-file-name="HOG_Kalman2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HOG_Kalman2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="353" column="1" selection-start-line="353" selection-start-column="1" selection-end-line="362" selection-end-column="1" />
+              <caret line="269" column="55" selection-start-line="269" selection-start-column="55" selection-end-line="269" selection-end-column="55" />
               <folding>
-                <element signature="e#289#7286#0" expanded="false" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HOG_DetectMultiScale_HOG_Default.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py">
+      <file leaf-file-name="servo_gir.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/servo_gir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="252" column="20" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="20" />
-              <folding>
-                <element signature="e#5861#7275#0" expanded="false" />
-                <element signature="e#7300#7416#0" expanded="false" />
-                <element signature="e#7471#7793#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.5691964">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sharingan_MIT_INRIA.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA.py">
+      <file leaf-file-name="videoReading.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoReading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72938687">
-              <caret line="321" column="27" selection-start-line="321" selection-start-column="27" selection-end-line="321" selection-end-column="27" />
-              <folding>
-                <element signature="e#2304#2518#0" expanded="false" />
-                <element signature="e#2574#5771#0" expanded="false" />
-                <element signature="e#5836#7250#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,8 +112,6 @@
         <option value="$PROJECT_DIR$/Camshift.py" />
         <option value="$PROJECT_DIR$/PeopleDetect2.py" />
         <option value="$PROJECT_DIR$/peopledetect.py" />
-        <option value="$PROJECT_DIR$/Kalman_mouse.py" />
-        <option value="$PROJECT_DIR$/Kalman_Canon.py" />
         <option value="$PROJECT_DIR$/HOG_SVM_digits.py" />
         <option value="$PROJECT_DIR$/HOG_SVN_Millorat.py" />
         <option value="$PROJECT_DIR$/Read_XML.py" />
@@ -112,23 +119,35 @@
         <option value="$PROJECT_DIR$/HOG_amb_funcions_Opencv.py" />
         <option value="$PROJECT_DIR$/cython_hog.py" />
         <option value="$PROJECT_DIR$/HOG.cpp" />
+        <option value="$PROJECT_DIR$/getSamplesImages.py" />
+        <option value="$PROJECT_DIR$/checkFileFormat.py" />
+        <option value="$PROJECT_DIR$/SVMLight.py" />
+        <option value="$PROJECT_DIR$/SVMLight2.py" />
+        <option value="$PROJECT_DIR$/SVMLight_Train2.py" />
+        <option value="$PROJECT_DIR$/SVMLight_Train1.py" />
         <option value="$PROJECT_DIR$/prova.py" />
         <option value="$PROJECT_DIR$/HOG1.py" />
         <option value="$PROJECT_DIR$/HOG2.py" />
         <option value="$PROJECT_DIR$/HOG3.py" />
-        <option value="$PROJECT_DIR$/getSamplesImages.py" />
-        <option value="$PROJECT_DIR$/checkFileFormat.py" />
         <option value="$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py" />
-        <option value="$PROJECT_DIR$/SVMLight.py" />
-        <option value="$PROJECT_DIR$/SVMLight2.py" />
-        <option value="$PROJECT_DIR$/SVMLight_Train2.py" />
+        <option value="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" />
+        <option value="$PROJECT_DIR$/HOG_skimage_feature_TEST.py" />
+        <option value="$PROJECT_DIR$/sharingan_MIT_INRIA_TEST.py" />
+        <option value="$PROJECT_DIR$/sharingan_MIT_INRIA_TEST2.py" />
+        <option value="$PROJECT_DIR$/HOG_skimage_feature_TEST2.py" />
         <option value="$PROJECT_DIR$/SVMLight_Test1.py" />
         <option value="$PROJECT_DIR$/SVMLight_Test2.py" />
-        <option value="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" />
-        <option value="$PROJECT_DIR$/SVMLight_Train1.py" />
-        <option value="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
         <option value="$PROJECT_DIR$/HOG_skimage_feature.py" />
         <option value="$PROJECT_DIR$/sharingan_MIT_INRIA.py" />
+        <option value="$PROJECT_DIR$/Kalman_Canon.py" />
+        <option value="$PROJECT_DIR$/KalmanExample.py" />
+        <option value="$PROJECT_DIR$/Kalman_mouse.py" />
+        <option value="$PROJECT_DIR$/imageCrop.py" />
+        <option value="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
+        <option value="$PROJECT_DIR$/HOG_Kalman2.py" />
+        <option value="$PROJECT_DIR$/HOG_Kalman.py" />
+        <option value="$PROJECT_DIR$/videoReading.py" />
+        <option value="$PROJECT_DIR$/servo_gir.py" />
       </list>
     </option>
   </component>
@@ -136,7 +155,6 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
@@ -164,8 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,22 +206,24 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HOG3">
-    <configuration default="false" name="SVMLight" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.videoReading">
+    <configuration default="false" name="KalmanExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -217,12 +235,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVMLight_Train1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KalmanExample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="DetectMultiScale_CompleteTrain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="HOG_Kalman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -234,12 +252,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_Kalman.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="SVMLight_Test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="imageCrop" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -251,12 +269,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVMLight_Test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imageCrop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="HOG_skimage_feature" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="HOG_DetectMultiScale_HOG_Default" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -268,12 +286,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_skimage_feature.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="HOG3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="videoReading" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -285,7 +303,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sharingan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HOG3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/videoReading.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -413,19 +431,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SVMLight" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DetectMultiScale_CompleteTrain" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SVMLight_Test2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.HOG_skimage_feature" />
-      <item index="4" class="java.lang.String" itemvalue="Python.HOG3" />
+      <item index="0" class="java.lang.String" itemvalue="Python.KalmanExample" />
+      <item index="1" class="java.lang.String" itemvalue="Python.HOG_Kalman" />
+      <item index="2" class="java.lang.String" itemvalue="Python.imageCrop" />
+      <item index="3" class="java.lang.String" itemvalue="Python.HOG_DetectMultiScale_HOG_Default" />
+      <item index="4" class="java.lang.String" itemvalue="Python.videoReading" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.HOG3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.HOG_skimage_feature" />
-        <item index="2" class="java.lang.String" itemvalue="Python.DetectMultiScale_CompleteTrain" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SVMLight_Test2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SVMLight" />
+        <item index="0" class="java.lang.String" itemvalue="Python.videoReading" />
+        <item index="1" class="java.lang.String" itemvalue="Python.HOG_Kalman" />
+        <item index="2" class="java.lang.String" itemvalue="Python.HOG_DetectMultiScale_HOG_Default" />
+        <item index="3" class="java.lang.String" itemvalue="Python.imageCrop" />
+        <item index="4" class="java.lang.String" itemvalue="Python.KalmanExample" />
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +476,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448380347941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="proves de resultats&#10;">
+      <created>1448971636761</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1448971636761</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -471,25 +495,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.47457626" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.4842615" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.4559174" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.4842615" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939467" sideWeight="0.4814815" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23828435" sideWeight="0.42857143" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42437592" sideWeight="0.3915806" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.45843422" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26431718" sideWeight="0.33995235" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2542373" sideWeight="0.5714286" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26431718" sideWeight="0.66004765" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.49717513" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26290706" sideWeight="0.421875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39385065" sideWeight="0.54964256" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.426529" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3001464" sideWeight="0.44162032" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23749007" sideWeight="0.578125" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3010279" sideWeight="0.55837965" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.4940429" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.49722" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.4940429" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -509,7 +533,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primera pujada" />
     <MESSAGE value="Proves: codi Skimage;&#10;adaptat HOG propi per executar el Multiscale per pintar rectanbles... un fracàs màxim&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proves: codi Skimage;&#10;adaptat HOG propi per executar el Multiscale per pintar rectanbles... un fracàs màxim&#10;" />
+    <MESSAGE value="proves de resultats&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="proves de resultats&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -517,6 +542,25 @@
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/HOG_amb_funcions_Opencv.py</url>
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/cython_hog.py</url>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Gradients.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/HOG2.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/HOG_skimage_feature.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="145" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -529,7 +573,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="136" />
+      <option name="time" value="244" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -539,382 +583,16 @@
         <watch expression="cy" language="Python" />
         <watch expression="cx" language="Python" />
         <watch expression="cy/2::cy" language="Python" />
+        <watch expression="iteracion" language="Python" />
+        <watch expression="crop" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TrackBar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gradients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6311881">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Encerclar_zoro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44554454">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Canny_detection_bordes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draws_OpenCV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0024752475">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Extract_color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detect_face_eyes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3425775">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kalman_mouse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036945812">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kalman_Canon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7364532">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Read_XML.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PeopleDetect_BackgroundChanges.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62849164">
-          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_SVM_digits.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877095">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_SVN_Millorat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sharinganMIT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.33121">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cython_hog.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.037123">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cython_hog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24361949">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cython_hog.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/ndimage/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="743" column="0" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Camshift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28601694">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3305785">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkFileFormat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getSamplesImages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82417583">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature_showGradients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.107142">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm_data.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="31.553911">
-          <caret line="995" column="20" selection-start-line="995" selection-start-column="20" selection-end-line="995" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0295982">
-          <caret line="66" column="18" selection-start-line="63" selection-start-column="8" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sharinganINRIA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svmlight_default.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svmlight.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.76744">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sharingan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1813188">
-          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding>
-            <element signature="e#1198#2278#0" expanded="false" />
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVMLight_Train2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVMLight_Test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="43" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVMLight_Test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="259" column="33" selection-start-line="259" selection-start-column="18" selection-end-line="259" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#852#1067#0" expanded="false" />
-            <element signature="e#1095#1401#0" expanded="false" />
-            <element signature="e#1427#1484#0" expanded="false" />
-            <element signature="e#1514#2594#0" expanded="false" />
-            <element signature="e#2620#2834#0" expanded="false" />
-            <element signature="e#2890#6087#0" expanded="false" />
-            <element signature="e#6152#7566#0" expanded="false" />
-            <element signature="e#7591#7707#0" expanded="false" />
-            <element signature="e#7762#8087#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svmlight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVMLight_Train1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm_Skimage.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6976744">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76109934">
-          <caret line="260" column="35" selection-start-line="260" selection-start-column="10" selection-end-line="260" selection-end-column="35" />
-          <folding>
-            <element signature="e#561#776#0" expanded="false" />
-            <element signature="e#804#1110#0" expanded="false" />
-            <element signature="e#1136#1193#0" expanded="false" />
-            <element signature="e#1223#2303#0" expanded="false" />
-            <element signature="e#2329#2543#0" expanded="false" />
-            <element signature="e#2599#5796#0" expanded="false" />
-            <element signature="e#5861#7275#0" expanded="false" />
-            <element signature="e#7300#7416#0" expanded="false" />
-            <element signature="e#7470#7792#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm_INRIA_MIT.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7928118">
-          <caret line="40" column="63" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/svm_Skimage.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="28" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,41 +600,364 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVMLight_Train2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42917547">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svm.pickle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5687103">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5961943">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cython_hog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py">
+    <entry file="file://$PROJECT_DIR$/Color_Quantitation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6659619">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draws_OpenCV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="252" column="20" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="20" />
-          <folding>
-            <element signature="e#5861#7275#0" expanded="false" />
-            <element signature="e#7300#7416#0" expanded="false" />
-            <element signature="e#7471#7793#0" expanded="false" />
-          </folding>
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Encerclar_zoro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Extract_color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19027483">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12684989">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_amb_funcions_Opencv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.22198732">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature_showGradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4545455">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNearest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50739956">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svm_INRIA_MIT.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.031712472">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proves_bordes_imatges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25369978">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svmlight_default.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharingan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4249473">
+          <caret line="313" column="32" selection-start-line="313" selection-start-column="32" selection-end-line="313" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA_TEST2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="330" column="15" selection-start-line="330" selection-start-column="15" selection-end-line="330" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature_TEST2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="461" column="16" selection-start-line="461" selection-start-column="16" selection-end-line="461" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detect_face_eyes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41226214">
+          <caret line="14" column="40" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PeopleDetect_BackgroundChanges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.064794816">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canny_detection_bordes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32397407">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PeopleDetect_HOG_OpenCV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4211663">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52699786">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA_TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93520516">
+          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_skimage_feature_TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="383" column="43" selection-start-line="383" selection-start-column="43" selection-end-line="383" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_SVN_Millorat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVMLight_Train1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVMLight_Test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVMLight_Test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Camshift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HOG_skimage_feature.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="353" column="1" selection-start-line="353" selection-start-column="1" selection-end-line="362" selection-end-column="1" />
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <element signature="e#289#7286#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sharingan_MIT_INRIA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72938687">
-          <caret line="321" column="27" selection-start-line="321" selection-start-column="27" selection-end-line="321" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KalmanExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4663574">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DetectMultiScale_CompleteTrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="262" column="30" selection-start-line="262" selection-start-column="30" selection-end-line="262" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imageCrop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kalman_mouse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1199095">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kalman_Canon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45701358">
+          <caret line="170" column="40" selection-start-line="170" selection-start-column="40" selection-end-line="170" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_HOG_Default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.28125">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_temps_execucio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46875">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkFileFormat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19430052">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_DetectMultiScale_SVM_Propi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666">
+          <caret line="262" column="29" selection-start-line="262" selection-start-column="29" selection-end-line="262" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46666667">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_Kalman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03348214">
+          <caret line="191" column="12" selection-start-line="191" selection-start-column="12" selection-end-line="191" selection-end-column="12" />
           <folding>
-            <element signature="e#2304#2518#0" expanded="false" />
-            <element signature="e#2574#5771#0" expanded="false" />
-            <element signature="e#5836#7250#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoReading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HOG_Kalman2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="269" column="55" selection-start-line="269" selection-start-column="55" selection-end-line="269" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servo_gir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5691964">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

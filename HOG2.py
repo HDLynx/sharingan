@@ -42,13 +42,8 @@ while(1):
     # draw the final bounding boxes
     for (xA, yA, xB, yB) in pick:
         cv2.rectangle(image, (xA, yA), (xB, yB), (0, 255, 0), 2)
-
-    # show some information on the number of bounding boxes
-    # filename = image[image.rfind("/") + 1:]
-    # print("[INFO] {}: {} original boxes, {} after suppression".format(
-		# filename, len(rects), len(pick)))
-
-	# show the output images
-	cv2.imshow("Before NMS", orig)
-	cv2.imshow("After NMS", image)
-	cv2.waitKey(0)
+    cv2.imshow("Before NMS", orig)
+    cv2.imshow("After NMS", image)
+    # k = cv2.waitKey(0)
+    # if k == 27:
+    #     break

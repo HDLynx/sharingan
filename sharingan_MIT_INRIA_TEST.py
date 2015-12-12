@@ -4,7 +4,6 @@ from glob import glob
 import itertools as it
 import math as m
 from operator import add, truediv
-from matplotlib import pyplot as plt
 from numpy.linalg import norm
 import xml.etree.ElementTree as ET
 
@@ -90,7 +89,6 @@ def getGradients(img):
             magnitud = m.sqrt((px**2) + (py**2))
             angle = m.degrees(getAngle(px,py))
             gradient_img.append([magnitud, angle])
-
     return gradient_img
 
 
@@ -226,207 +224,145 @@ test_neg = glob('train64_128/neg/*')
 # train_prova_neg = glob('prova/neg/*')
 iteracion = 0
 
-# svm.load('svm_INRIA.dat')
+svm.load('svm_INRIA_MIT.dat')
 
-for fn in it.chain(train_pos):
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = load_image(fn)
-        height, width = img.shape
-        if width > height:
-            img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels.append([1.])
-    except:
-        print 'loading error'
-        continue
-    # Calculem el gradient de la imatge
-    gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-    # Calculem histograma per cells de Ndimensions
-    histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-    # Normalitzem per blocks
-    histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-    # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-    samples.append(histogram_vector_normalized)
-    counter += 1
-    print counter
-for fn in it.chain(train_neg):
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = load_image(fn)
-        height, width = img.shape
-        if width > height:
-            img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels.append([-1.])
-    except:
-        print 'loading error'
-        continue
-    # Calculem el gradient de la imatge
-    gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-    # Calculem histograma per cells de Ndimensions
-    histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-    # Normalitzem per blocks
-    histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-    # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-    samples.append(histogram_vector_normalized)
-    counter += 1
-    print counter
-for fn in it.chain(train_MIT):
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = load_image(fn)
-        height, width = img.shape
-        if width > height:
-            img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels.append([1.])
-    except:
-        print 'loading error'
-        continue
-    # Calculem el gradient de la imatge
-    gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-    # Calculem histograma per cells de Ndimensions
-    histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-    # Normalitzem per blocks
-    histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-    # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-    samples.append(histogram_vector_normalized)
-    counter += 1
-    print counter
-samples = np.float32(samples)
-labels = np.float32(labels)
-svm.train(samples, labels, params=svm_params)
-svm.save('svm_INRIA_MIT.dat')
-svm.save('svm_INRIA_MIT.xml')
+# for fn in it.chain(train_pos):
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = load_image(fn)
+#         height, width = img.shape
+#         if width > height:
+#             img = cv2.transpose(img)
+#         img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels.append([1.])
+#     except:
+#         print 'loading error'
+#         continue
+#     # Calculem el gradient de la imatge
+#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
+#     # Calculem histograma per cells de Ndimensions
+#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
+#     # Normalitzem per blocks
+#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
+#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
+#     samples.append(histogram_vector_normalized)
+#     counter += 1
+#     print counter
+# for fn in it.chain(train_neg):
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = load_image(fn)
+#         height, width = img.shape
+#         if width > height:
+#             img = cv2.transpose(img)
+#         img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels.append([-1.])
+#     except:
+#         print 'loading error'
+#         continue
+#     # Calculem el gradient de la imatge
+#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
+#     # Calculem histograma per cells de Ndimensions
+#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
+#     # Normalitzem per blocks
+#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
+#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
+#     samples.append(histogram_vector_normalized)
+#     counter += 1
+#     print counter
+# for fn in it.chain(train_MIT):
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = load_image(fn)
+#         height, width = img.shape
+#         if width > height:
+#             img = cv2.transpose(img)
+#         img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels.append([1.])
+#     except:
+#         print 'loading error'
+#         continue
+#     # Calculem el gradient de la imatge
+#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
+#     # Calculem histograma per cells de Ndimensions
+#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
+#     # Normalitzem per blocks
+#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
+#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
+#     samples.append(histogram_vector_normalized)
+#     counter += 1
+#     print counter
+# samples = np.float32(samples)
+# labels = np.float32(labels)
+# svm.train(samples, labels, params=svm_params)
+# svm.save('svm_INRIA_MIT.dat')
+# svm.save('svm_INRIA_MIT.xml')
 # iteracion = 0
-# for fn in it.chain(test_pos):
-#     # iteracion += 1
-#     # if iteracion == 10:
-#     #     break
-#     try:
-#         # Retornem imatge en escala de grisos normalitzada
-#         img = load_image(fn)
-#         height, width = img.shape
-#         if width > height:
-#             img = cv2.transpose(img)
-#         img = cv2.resize(img, (64, 128))
-#         height, width = img.shape
-#
-#         if img is None:
-#             print 'Failed to load image file:', fn
-#             continue
-#         else:
-#             labels_test.append([1.])
-#     except:
-#         print 'loading error'
-#         continue
-#     # Calculem el gradient de la imatge
-#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-#     # Calculem histograma per cells de Ndimensions
-#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-#     # Normalitzem per blocks
-#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-#     samples_test.append(histogram_vector_normalized)
-#     counter += 1
-#     print counter
-# for fn in it.chain(test_neg):
-#     # iteracion += 1
-#     # if iteracion == 10:
-#     #     break
-#     try:
-#         # Retornem imatge en escala de grisos normalitzada
-#         img = load_image(fn)
-#         height, width = img.shape
-#         if width > height:
-#             img = cv2.transpose(img)
-#         img = cv2.resize(img, (64, 128))
-#         height, width = img.shape
-#
-#         if img is None:
-#             print 'Failed to load image file:', fn
-#             continue
-#         else:
-#             labels_test.append([0.])
-#     except:
-#         print 'loading error'
-#         continue
-#     # Calculem el gradient de la imatge
-#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-#     # Calculem histograma per cells de Ndimensions
-#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-#     # Normalitzem per blocks
-#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-#     samples_test.append(histogram_vector_normalized)
-#     counter += 1
-#     print counter
-# for fn in it.chain(test_mit):
-#     # iteracion += 1
-#     # if iteracion == 10:
-#     #     break
-#     try:
-#         # Retornem imatge en escala de grisos normalitzada
-#         img = load_image(fn)
-#         height, width = img.shape
-#         if width > height:
-#             img = cv2.transpose(img)
-#         img = cv2.resize(img, (64, 128))
-#         height, width = img.shape
-#
-#         if img is None:
-#             print 'Failed to load image file:', fn
-#             continue
-#         else:
-#             labels_test.append([1.])
-#     except:
-#         print 'loading error'
-#         continue
-#     # Calculem el gradient de la imatge
-#     gradient_img = getGradients(img) # Mirar la funcio cartToPolar
-#     # Calculem histograma per cells de Ndimensions
-#     histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
-#     # Normalitzem per blocks
-#     histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
-#     # histogram_vector_normalized = np.float32(histogram_vector_normalized)
-#     samples_test.append(histogram_vector_normalized)
-#     counter += 1
-#     print counter
-#
-# samples_test = np.float32(samples_test)
-# labels_test = np.float32(labels_test)
-#
-# resp = svm.predict_all(samples_test)
-#
-# mask = resp == labels_test
-# correct = np.count_nonzero(mask)
-#
-# print correct*100.0/resp.size,'%'
+for fn in it.chain(test_neg):
+    # iteracion += 1
+    # if iteracion == 10:
+    #     break
+    try:
+        # Retornem imatge en escala de grisos normalitzada
+        img = load_image(fn)
+        height, width = img.shape
+        if width > height:
+            img = cv2.transpose(img)
+        img = cv2.resize(img, (64, 128))
+        height, width = img.shape
+
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+        else:
+            labels_test.append([-1.])
+    except:
+        print 'loading error'
+        continue
+    # Calculem el gradient de la imatge
+    gradient_img = getGradients(img) # Mirar la funcio cartToPolar
+    # Calculem histograma per cells de Ndimensions
+    histogram_vector, nVertCell, nHorizCell = calculateHistogramCells(gradient_img, height, width)
+    # Normalitzem per blocks
+    histogram_vector_normalized = normalizeHistogramsBlocks(histogram_vector, nHorizCell, nVertCell)
+    # histogram_vector_normalized = np.float32(histogram_vector_normalized)
+    samples_test.append(histogram_vector_normalized)
+    counter += 1
+    print counter
+
+samples_test = np.float32(samples_test)
+labels_test = np.float32(labels_test)
+
+resp = svm.predict_all(samples_test)
+
+mask = resp == labels_test
+correct = np.count_nonzero(mask)
+
+print correct*100.0/resp.size,'%'

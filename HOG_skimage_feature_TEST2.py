@@ -4,7 +4,6 @@ from scipy.ndimage import uniform_filter
 from glob import glob
 import itertools as it
 import cv2
-from matplotlib import pyplot as plt
 
 def hog(image, orientations=9, pixels_per_cell=(8, 8),
         cells_per_block=(2, 2), visualise=False, normalise=False):
@@ -82,16 +81,7 @@ def hog(image, orientations=9, pixels_per_cell=(8, 8),
     gy = np.zeros(image.shape)
     gx[:, :-1] = np.diff(image, n=1, axis=1)
     gy[:-1, :] = np.diff(image, n=1, axis=0)
-    # plt.subplot(2,2,1),plt.imshow(img,cmap = 'gray')
-    # plt.title('Original'), plt.xticks([]), plt.yticks([])
-    # plt.subplot(2,2,2),plt.imshow(gx,cmap = 'gray')
-    # plt.title('Sobel X'), plt.xticks([]), plt.yticks([])
-    # plt.subplot(2,2,3),plt.imshow(gy,cmap = 'gray')
-    # plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
 
-    # k = cv2.waitKey(0)
-    # if k == 27:
-    #     exit
     """
     The third stage aims to produce an encoding that is sensitive to
     local image content while remaining resistant to small changes in
@@ -203,10 +193,10 @@ def hog(image, orientations=9, pixels_per_cell=(8, 8),
 # train_MIT = glob('MIT/*')
 # train_neg2 = glob('samples_neg/*')
 # test_neg2 = glob('train64_128/neg/*')
-train_pos = glob('96X160H96/Train/pos/*')
-train_MIT = glob('MIT/*')
-train_neg = glob('samples_neg/*')
-test_neg = glob('train64_128/neg/*')
+test_pos1 = glob('70X134H96/Test/pos/*')
+test_pos2 = glob('test/pos/*')
+test_neg1 = glob('test_neg/*')
+test_neg2 = glob('train64_128/neg/*')
 sample_train = []
 labels_train = []
 sample_test = []
@@ -215,95 +205,93 @@ svm_params = dict( kernel_type = cv2.SVM_LINEAR,
                     svm_type = cv2.SVM_C_SVC,
                     C=2.67, gamma=5.383 )
 counter = 0
-for fn in it.chain(train_pos):
-
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = cv2.imread(fn, 0)
-        height, width = img.shape
-        if width > height:
-            img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels_train.append([1.])
-    except:
-        print 'loading error'
-        continue
-    sample = hog(img)
-    sample_train.append(sample)
-    counter += 1
-    print counter
-
-for fn in it.chain(train_MIT):
-
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = cv2.imread(fn, 0)
-        # height, width = img.shape
-        # if width > height:
-        #     img = cv2.transpose(img)
-        # img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels_train.append([1.])
-    except:
-        print 'loading error'
-        continue
-
-    sample_train.append(hog(img))
-    counter += 1
-    print counter
-
-for fn in it.chain(train_neg):
-
-    # iteracion += 1
-    # if iteracion == 10:
-    #     break
-    try:
-        # Retornem imatge en escala de grisos normalitzada
-        img = cv2.imread(fn, 0)
-        height, width = img.shape
-        if width > height:
-            img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
-        height, width = img.shape
-
-        if img is None:
-            print 'Failed to load image file:', fn
-            continue
-        else:
-            labels_train.append([-1.])
-    except:
-        print 'loading error'
-        continue
-
-    sample_train.append(hog(img))
-    counter += 1
-    print counter
-# labels_train[0] = [0.]
-sample_train = np.float32(sample_train)
-labels_train = np.float32(labels_train)
-
+# for fn in it.chain(train_pos):
+#
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = cv2.imread(fn, 0)
+#         height, width = img.shape
+#         if width > height:
+#             img = cv2.transpose(img)
+#         img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels_train.append([1.])
+#     except:
+#         print 'loading error'
+#         continue
+#     sample = hog(img)
+#     sample_train.append(sample)
+#     counter += 1
+#     print counter
+#
+# for fn in it.chain(train_MIT):
+#
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = cv2.imread(fn, 0)
+#         # height, width = img.shape
+#         # if width > height:
+#         #     img = cv2.transpose(img)
+#         # img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels_train.append([1.])
+#     except:
+#         print 'loading error'
+#         continue
+#
+#     sample_train.append(hog(img))
+#     counter += 1
+#     print counter
+#
+# for fn in it.chain(train_neg):
+#
+#     # iteracion += 1
+#     # if iteracion == 10:
+#     #     break
+#     try:
+#         # Retornem imatge en escala de grisos normalitzada
+#         img = cv2.imread(fn, 0)
+#         height, width = img.shape
+#         if width > height:
+#             img = cv2.transpose(img)
+#         img = cv2.resize(img, (64, 128))
+#         height, width = img.shape
+#
+#         if img is None:
+#             print 'Failed to load image file:', fn
+#             continue
+#         else:
+#             labels_train.append([-1.])
+#     except:
+#         print 'loading error'
+#         continue
+#
+#     sample_train.append(hog(img))
+#     counter += 1
+#     print counter
+# # labels_train[0] = [0.]
+# sample_train = np.float32(sample_train)
+# labels_train = np.float32(labels_train)
+#
 svm = cv2.SVM()
 
-svm.train(sample_train,labels_train, params=svm_params)
-svm.save('svm_Skimage.dat')
-svm.save('svm_Skimage.xml')
+svm.load('svm_Skimage.dat')
 # for fn in it.chain(test_pos):
 #
 #     # iteracion += 1
@@ -378,36 +366,107 @@ svm.save('svm_Skimage.xml')
 #     sample_test.append(hog(img))
 
 
-# for fn in it.chain(test_neg):
-#
-#     # iteracion += 1
-#     # if iteracion == 10:
-#     #     break
-#     try:
-#         # Retornem imatge en escala de grisos normalitzada
-#         img = cv2.imread(fn, 0)
-#         height, width = img.shape
-#         if width > height:
-#             img = cv2.transpose(img)
-#         img = cv2.resize(img, (64, 128))
-#         height, width = img.shape
-#
-#         if img is None:
-#             print 'Failed to load image file:', fn
-#             continue
-#         else:
-#             labels_test.append([-1.])
-#     except:
-#         print 'loading error'
-#         continue
-#
-#     sample_test.append(hog(img))
-#
-# samples_test = np.float32(sample_test)
-# labels_test = np.float32(labels_test)
-#
-# resp = svm.predict_all(samples_test)
-#
-# mask = resp == labels_test
-# correct = np.count_nonzero(mask)
-# print correct*100.0/resp.size,'%'
+for fn in it.chain(test_pos1):
+
+    # iteracion += 1
+    # if iteracion == 10:
+    #     break
+    try:
+        # Retornem imatge en escala de grisos normalitzada
+        img = cv2.imread(fn, 0)
+        height, width = img.shape
+        if width > height:
+            img = cv2.transpose(img)
+        img = cv2.resize(img, (64, 128))
+        height, width = img.shape
+
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+        else:
+            labels_test.append([1.])
+    except:
+        print 'loading error'
+        continue
+
+    sample_test.append(hog(img))
+for fn in it.chain(test_pos2):
+
+    # iteracion += 1
+    # if iteracion == 10:
+    #     break
+    try:
+        # Retornem imatge en escala de grisos normalitzada
+        img = cv2.imread(fn, 0)
+        height, width = img.shape
+        if width > height:
+            img = cv2.transpose(img)
+        img = cv2.resize(img, (64, 128))
+        height, width = img.shape
+
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+        else:
+            labels_test.append([1.])
+    except:
+        print 'loading error'
+        continue
+
+    sample_test.append(hog(img))
+for fn in it.chain(test_neg1):
+
+    # iteracion += 1
+    # if iteracion == 10:
+    #     break
+    try:
+        # Retornem imatge en escala de grisos normalitzada
+        img = cv2.imread(fn, 0)
+        height, width = img.shape
+        if width > height:
+            img = cv2.transpose(img)
+        img = cv2.resize(img, (64, 128))
+        height, width = img.shape
+
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+        else:
+            labels_test.append([-1.])
+    except:
+        print 'loading error'
+        continue
+
+    sample_test.append(hog(img))
+for fn in it.chain(test_neg2):
+
+    # iteracion += 1
+    # if iteracion == 10:
+    #     break
+    try:
+        # Retornem imatge en escala de grisos normalitzada
+        img = cv2.imread(fn, 0)
+        height, width = img.shape
+        if width > height:
+            img = cv2.transpose(img)
+        img = cv2.resize(img, (64, 128))
+        height, width = img.shape
+
+        if img is None:
+            print 'Failed to load image file:', fn
+            continue
+        else:
+            labels_test.append([-1.])
+    except:
+        print 'loading error'
+        continue
+
+    sample_test.append(hog(img))
+samples_test = np.float32(sample_test)
+labels_test = np.float32(labels_test)
+
+resp = svm.predict_all(samples_test)
+
+mask = resp == labels_test
+correct = np.count_nonzero(mask)
+print correct*100.0/resp.size,'%'

@@ -257,7 +257,7 @@ iteracion = 0
 # svm.load('svmlight.dat')
 # svm.save('svmlight2.xml')
 svmvec = []
-tree = ET.parse('svm_INRIA_MIT.xml')
+tree = ET.parse('svmlight.xml')
 root = tree.getroot()
 # now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
 SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
@@ -307,5 +307,5 @@ for fn in it.chain(train_prova_pos):
     except:
         print 'loading error'
         continue
-    print counter, '----'
+    print '----'
 print len(fails), fails

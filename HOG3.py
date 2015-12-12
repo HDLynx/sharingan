@@ -3,7 +3,7 @@ import cv2
 from skimage.feature import hog
 # from skimage import data
   
-image = cv2.imread("MIT/Train/per00001.ppm", cv2.COLOR_RGB2GRAY)
+image = cv2.imread("MIT/Train/per00001.ppm", cv2.COLOR_BAYER_RG2GRAY)
 image = cv2.resize(image, (64, 128))
 fd, hog_image = hog(image, orientations=8, pixels_per_cell=(16, 16),
                     cells_per_block=(1, 1), visualise=True)

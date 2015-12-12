@@ -239,15 +239,15 @@ iteracion = 0
 
 svm.load('svmlight.xml')
 
-# tree = ET.parse('svmlight.xml')
-# root = tree.getroot()
-# # now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
-# SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
-# rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
-# svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
-# svmvec.append(-rho)
-# pickle.dump(svmvec, open("svm.pickle", 'w'))
-# svm = pickle.load(open("svm.pickle"))
+tree = ET.parse('svmlight.xml')
+root = tree.getroot()
+# now this is really dirty, but after ~3h of fighting OpenCV its what happens :-)
+SVs = root.getchildren()[0].getchildren()[-2].getchildren()[0]
+rho = float( root.getchildren()[0].getchildren()[-1].getchildren()[0].getchildren()[1].text )
+svmvec = [float(x) for x in re.sub( '\s+', ' ', SVs.text ).strip().split(' ')]
+svmvec.append(-rho)
+pickle.dump(svmvec, open("svm.pickle", 'w'))
+svm = pickle.load(open("svm.pickle"))
 hog.setSVMDetector( np.array(svm) )
 del svm
 for fn in it.chain(train_pos):
@@ -261,7 +261,7 @@ for fn in it.chain(train_pos):
         # height, width = img.shape
         # if width > height:
         #     img = cv2.transpose(img)
-        img = cv2.resize(img, (64, 128))
+        # img = cv2.resize(img, (64, 128))
         # height, width = img.shape
 
         if img is None:

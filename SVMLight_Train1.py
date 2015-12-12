@@ -43,8 +43,8 @@ counter = 0
 for fn in it.chain(train_pos):
     #print fn, ' - ',
     try:
-        img = cv2.imread(fn, 0)
-        # img = cv2.resize(img, (64, 128))
+        img = cv2.imread(fn)
+        img = cv2.resize(img, (64, 128))
         cv2.imshow('img', img)
         if img is None:
             print 'Failed to load image file:', fn
@@ -59,8 +59,8 @@ for fn in it.chain(train_pos):
 for fn in it.chain(train_MIT):
     #print fn, ' - ',
     try:
-        img = cv2.imread(fn, 0)
-        # img = cv2.resize(img, (64, 128))
+        img = cv2.imread(fn)
+        img = cv2.resize(img, (64, 128))
         cv2.imshow('img', img)
         if img is None:
             print 'Failed to load image file:', fn
@@ -76,8 +76,8 @@ for fn in it.chain(train_MIT):
 for fn in it.chain(train_neg):
     #print fn, ' - ',
     try:
-        img = cv2.imread(fn, 0)
-        # img = cv2.resize(img, (64, 128))
+        img = cv2.imread(fn)
+        img = cv2.resize(img, (64, 128))
         if img is None:
             print 'Failed to load image file:', fn
             continue

@@ -15,7 +15,6 @@ nbins = 9
 derivAperture = 0
 winSigma = -1
 histogramNormType = 0
-# L2HysThreshold = 2.0000000000000001e-01
 L2HysThreshold = 0.2
 gammaCorrection = 0
 nlevels = 64
@@ -101,7 +100,7 @@ for fn in it.chain(test_pos1):
     #print fn, ' - ',
     try:
         img = cv2.imread(fn)
-        img = cv2.resize(img, (64, 128))
+        # img = cv2.resize(img, (64, 128))
         if img is None:
             print 'Failed to load image file:', fn
             continue
@@ -116,7 +115,7 @@ for fn in it.chain(test_pos2):
     #print fn, ' - ',
     try:
         img = cv2.imread(fn)
-        img = cv2.resize(img, (64, 128))
+        # img = cv2.resize(img, (64, 128))
         if img is None:
             print 'Failed to load image file:', fn
             continue
@@ -131,7 +130,7 @@ for fn in it.chain(test_neg1):
     #print fn, ' - ',
     try:
         img = cv2.imread(fn)
-        img = cv2.resize(img, (64, 128))
+        # img = cv2.resize(img, (64, 128))
         if img is None:
             print 'Failed to load image file:', fn
             continue
